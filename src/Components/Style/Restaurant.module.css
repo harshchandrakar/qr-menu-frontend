@@ -1,0 +1,88 @@
+.Restaurant{
+    height: 100vh;
+}
+.Dashboard{
+    margin: auto;
+    max-width: 800px;
+    padding-bottom: 100px;
+}
+.Header{
+    background-color: rgba(255, 255, 255, 0.436);
+    max-width: 750px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    color: #4b0000;
+    display: flex;
+    gap: 4rem;
+}
+.Header img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.Section{
+    background-color: rgba(255, 255, 255, 0.436);
+    max-width: 790px;
+    border-radius: 10px;
+    color: #4b0000;
+    padding: 0.5rem;
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.Section h3{
+    margin: 0;
+    align-self: center;
+font-size: 1.5rem;
+margin-left: 1rem;
+}
+.btn{
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #e90d0d ;
+    padding: 0.5rem;
+    width: 210px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn1{
+    display: block;
+    border: 2px solid #e90d0d;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: white ;
+    padding: 0.5rem;
+    width: 210px;
+    color: #e90d0d;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.item {
+    display: flex;
+    background-color: rgba(216, 187, 187, 0.304);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.item p{
+    margin: 1rem  2rem;
+    font-size: 1.3rem;
+    color: rgb(81, 45, 45);
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 650px) {
+    .Header{
+        flex-direction: column;
+    }
+}

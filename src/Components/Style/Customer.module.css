@@ -1,0 +1,195 @@
+.Customer{
+    max-width: 800px;
+    margin: auto;
+}
+
+.restaurant{
+    background-color: rgba(255, 255, 255, 0.436);
+    max-width: 750px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    color: #4b0000;
+    display: flex;
+    gap: 4rem;
+    cursor: pointer;
+}
+.restaurant img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    align-self: center;
+}
+.btn1{
+    border: 2px solid #e90d0d;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: white ;
+    padding: 0.5rem;
+    width: 210px;
+    color: #e90d0d;
+    margin-top: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    display: inline-block;
+}
+.btns{
+    display: flex;
+    justify-content: right;
+}
+.Header{
+    background-color: rgba(255, 255, 255, 0.436);
+    max-width: 750px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    color: #4b0000;
+    display: flex;
+    gap: 4rem;
+}
+.Header img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    align-self: center;
+}
+.View{
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.item {
+    display: flex;
+    background-color: rgba(216, 187, 187, 0.304);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.item p{
+    margin: 1rem  2rem;
+    font-size: 1.3rem;
+    color: rgb(81, 45, 45);
+}
+.Section{
+    background-color: rgba(255, 255, 255, 0.436);
+    max-width: 790px;
+    border-radius: 10px;
+    color: #4b0000;
+    padding: 0.5rem;
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.Section h3{
+    margin: 0;
+    align-self: center;
+font-size: 1.5rem;
+margin-left: 1rem;
+}
+/* input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  } */
+  .qty{
+    width:3rem;
+    height: 1.2rem;
+ color: #e90d0d;
+ border-radius: 5px;
+ border: 1px solid #e90d0d;
+ padding-left: 5px;
+  }
+  .btn2{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #e90d0d;
+    color: white;
+    border: 1px solid white;
+    font-size: 12px;
+    border-radius: 5px;
+
+  }
+  @media (max-width: 650px) {
+    .Header{
+        flex-direction: column;
+    }
+    .restaurant{
+      flex-direction: column;
+    }
+  }
+  .order{
+    background-color: #e90d0d;
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    border-radius:20px ;
+   
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+  .summary{
+    position: sticky;
+    bottom:0;
+  }
+  .order h2{
+    margin: 0;
+  }
+  .list {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #e90d0d;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    max-height: 300px;
+    overflow: scroll;
+    text-align: center;
+  }
+.list table {
+    justify-content: space-between;
+    color: #4b0000;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    
+
+}
+
+.input1{
+    margin-right: 0.5rem;
+    background-color: "#fd0000";
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 1.2rem;
+    height: 2rem;
+    width:120px;
+  margin: auto;
+    align-self: center;
+    margin-right: 1rem;
+}
+.input1::placeholder{
+    color:#4b0000;
+}
+.input1:focus::placeholder {
+    color: transparent;
+  }
+.input1:focus{
+    outline-style: solid;
+    outline-color:#fd0000 ;
+}

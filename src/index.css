@@ -1,11 +1,26 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  place-items: center;
+  background-image: url("./Components/Helpers/Images/grid.svg");
+  height: 100%;
+  width: 100%;
+
+  top: 0;
+  bottom:0;
+  z-index: -1;
+  background-size: cover;
+ overflow: auto;
+ background-attachment: fixed;
+  
+  animation: pan 7s alternate;
+
 }
+@keyframes pan {
+  100% {
+    background-position: 15% 20%;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
