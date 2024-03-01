@@ -35,7 +35,8 @@ function Customer() {
               navigate(`/restaurant/${item.city}/${item._id}`);
             }}
           >
-            <img src={item.logo} alt=" " />
+            <img src={`data:image/jpeg;base64,${item.image}`} alt=" " />
+            {console.log(item.image)}
             <div className={classes.details}>
               <h1>{item.restname.toUpperCase()}</h1>
               <p>

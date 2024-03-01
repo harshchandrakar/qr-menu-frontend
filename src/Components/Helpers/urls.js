@@ -8,4 +8,5 @@ export const APIUrls = {
   addItem: () => `${API_ROOT}/api/v1/menu`,
   getMenu: () => `${API_ROOT}/api/v1/menu?id=`,
   sendOrder: () => `${API_ROOT}/api/v1/orders`,
+  generateReport: () => `${API_ROOT}/api/v1/report?restId=`
 };

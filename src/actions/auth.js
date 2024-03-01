@@ -1,5 +1,6 @@
 import {
   ALL_RESTAURANT_DETAILS,
+  GENERATE_REPORT,
   LOGIN_SUCCESSFUL,
   LOGOUT,
   OTP_VERIFICATION_FAILED,
@@ -49,6 +50,14 @@ export function updateData(data) {
     data,
   };
 }
+
+export function generateReport(data) {
+  return {
+    type: GENERATE_REPORT,
+    data,
+  };
+}
+
 export function updateSubLoading(data) {
   return {
     type: UPDATE_SUBLOADING,
@@ -248,6 +257,29 @@ export function sendOrder(item) {
         if (data.success === true) {
           console.log("Order Done");
           dispatch(updateSuccess(true, data.message));
+        }
+      });
+  };
+}
+
+// get report
+
+export function getReport() {
+  return (dispatch, getState) => {
+    const { auth } = getState();
+    const url = APIUrls.generateReport() + auth.rest_details.profile._id;
+    fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+        if (data.success === true) {
+          console.log(data)
+          dispatch(generateReport(data.data));
         }
       });
   };

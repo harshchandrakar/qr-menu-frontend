@@ -1,5 +1,6 @@
 import {
   ALL_RESTAURANT_DETAILS,
+  GENERATE_REPORT,
   LOGIN_SUCCESSFUL,
   LOGOUT,
   SET_ISLOADING,
@@ -24,6 +25,7 @@ const initialAuthState = {
     issue: false,
     message: "",
   },
+  report: {}
 };
 
 export default function auth(state = initialAuthState, action) {
@@ -83,6 +85,11 @@ export default function auth(state = initialAuthState, action) {
           message: action.msg,
         },
       };
+    case GENERATE_REPORT:
+      return {
+        ...state,
+        report: action.data
+      }
     default:
       return state;
   }

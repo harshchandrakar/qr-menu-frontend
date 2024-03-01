@@ -121,7 +121,10 @@ function View() {
           <div
             className={`${classes.Header} animate__animated animate__flipInX animate__delay-0s `}
           >
-            <img src={response.profile.logo} alt=" " />
+            <img
+              src={`data:image/jpeg;base64,${response.profile.image}`}
+              alt=" "
+            />
             <div className={classes.details}>
               <h1>{response.profile.restname.toUpperCase()}</h1>
               <p>

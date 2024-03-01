@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import classes from "../Style/Utils.module.css";
 import { useDispatch } from "react-redux";
 import { registerRestaurant, sendLoginRequest } from "../../actions/auth";
+import countrydata from "../Helpers/countries+states+cities.json";
 
 function Login() {
   const passwordRef = useRef();

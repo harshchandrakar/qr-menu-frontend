@@ -8,6 +8,7 @@ import Navbar from "./Helpers/Navbar";
 import Restaurant from "./Restaurant/Restaurant";
 import ErrorPopup from "./Utils/ErrorPopup";
 import SuccessPopUp from "./Utils/SuccessPopUp";
+import Demo from "./Customer/Demo";
 function Routing() {
   const auth = useSelector((data) => data.auth);
   const dispatch = useDispatch();
@@ -54,6 +55,17 @@ function Routing() {
               <>
                 {" "}
                 <Navbar /> <View />
+              </>
+            }
+          />
+          <Route
+            exact
+            path="/demo"
+            element={
+              <>
+                {" "}
+                <Navbar />
+                <Demo />
               </>
             }
           />

@@ -29,7 +29,7 @@
     background-color: rgba(255, 255, 255, 0.436);
     max-width: 790px;
     border-radius: 10px;
-    color: #4b0000;
+    color: rgb(245, 235, 235);
     padding: 0.5rem;
     display: flex;
     margin: auto;
@@ -68,14 +68,15 @@ margin-left: 1rem;
 }
 .item {
     display: flex;
-    background-color: rgba(216, 187, 187, 0.304);
+    background-color: rgba(216, 187, 187, 0.229);
     border-radius: 10px;
     justify-content: space-between;
+    margin: 1rem 0;
 }
 .item p{
     margin: 1rem  2rem;
     font-size: 1.3rem;
-    color: rgb(81, 45, 45);
+    color:rgb(245, 235, 235);
 }
 .btns{
     display: flex;
@@ -86,3 +87,86 @@ margin-left: 1rem;
         flex-direction: column;
     }
 }
+.tab{
+ display: flex;
+ margin-top: 1rem;
+ cursor: pointer;
+}
+
+.ntgl{
+    border: 2px solid;
+    width:7rem;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
+    text-align: center;
+
+}
+
+.alternateTab{
+    background-color: #ca3e0fc1;
+    padding: 1rem;
+    color: aliceblue;
+    height: auto;
+    border-radius: 0 20px 20px 20px ;
+    min-height: 20rem;
+}
+.tgl {
+    background-color: #ca3e0fc1;
+    border-left: 0;
+    border-right: 0;
+    width:7rem;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    color: azure;
+}
+.topReport img{
+    max-height: 15rem;
+    border-radius: 20px;
+}
+
+.topReport img:hover{
+    transform: scale(2);
+}
+.topReport {
+    display: flex;
+    gap: 1rem;
+    background-color:rgba(255, 255, 255, 0.23); 
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.miniboard {
+    background-color: rgba(255, 255, 255, 0.436);
+    min-height: 13rem;
+    border-radius: 20px;
+    padding: 1rem;
+    
+}
+.miniboard h2{
+    margin-bottom: 0;
+}
+.miniboard span{
+    color:#962424;
+    font-size: 2rem;
+    display: block;
+}
+.miniQty{
+
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+.midReport{
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.23); 
+    border-radius: 20px;
+    padding:1rem;
+    margin: 1rem 0;
+}
+
+.midReport img {
+ border-radius: 20px;
+}
+.midReport img:hover {
+    transform: scale(1.5);
+   }
